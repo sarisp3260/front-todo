@@ -3,7 +3,6 @@ import { Navigate, Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Todos from "./pages/Todos"
-import CreateTodo from "./pages/CreateTodo"
 import { TaskContext } from "./context/TaskContext"
 import { getTasks } from "./utils/task"
 
@@ -25,7 +24,7 @@ function App() {
   },[])
 
   return (
-    <div className="App font-plus text-slate-800 min-h-screen flex flex-col justify-between items-center bg-purple-100 backdrop-blur-3xl selection:bg-purple-400">
+    <div className="App font-plus text-slate-800 min-h-screen flex flex-col justify-between items-center gap-3 md:gap-0 bg-purple-100 backdrop-blur-3xl selection:bg-purple-400 relative">
       <Navbar/>
 
       <div className="todo w-full flex justify-center items-center">
@@ -38,10 +37,6 @@ function App() {
           <Route
           path='/todos'
           element={<Todos/>}/>
-
-          <Route 
-          path='/create-todo'
-          element={<CreateTodo/>}/>
 
           <Route
           path='*'
