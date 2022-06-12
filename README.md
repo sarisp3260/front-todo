@@ -7,6 +7,8 @@ This application has a purpose in my learning to reinforce all the knowledge in 
 - React
 - Tailwind
 - Axios
+- Vite
+- Router Dom v6
 
 ## Folder Structure
 
@@ -20,3 +22,22 @@ This application has a purpose in my learning to reinforce all the knowledge in 
 ## Deploy :rocket:
 
  http://front-todo.vercel.app/
+ 
+ ## Clone this Repo
+ 
+ Clone
+ ```
+ git clone https://github.com/sarisp3260/front-todo.git
+ ```
+ Change to the cloned directory 
+ ```
+ cd front-todo
+ ```
+ install node_modules
+ ```
+ npm install
+ ```
+ run app locally
+ ```
+ npm run dev
+ ```
