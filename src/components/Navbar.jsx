@@ -1,11 +1,14 @@
 import React from 'react'
 import { SiTodoist } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav className='w-full flex items-center justify-between text-slate-700 px-5 py-4 md:px-10'>
         <div className="logo flex items-center text-2xl gap-5 text-slate-800">
-            <span className='flex items-center'>Tod<SiTodoist/> List</span>
+            <Link to="/">
+              <span className='flex items-center'>Tod<SiTodoist/> List</span>
+            </Link>
         </div>
 
         <div className="sections">
